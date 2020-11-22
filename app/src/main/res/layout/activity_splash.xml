@@ -7,40 +7,53 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/appsplash"
         android:layout_width="wrap_content"
         android:layout_height="900dp"
         android:scaleType="centerCrop"
         android:src="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/logoinverse"
-        android:layout_width="72dp"
-        android:layout_height="94dp"
-        android:layout_marginStart="104dp"
+        android:id="@+id/appname"
+        android:layout_width="173dp"
+        android:layout_height="126dp"
+        android:src="@drawable/tradeal_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toEndOf="@+id/applogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="114dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="56dp"
         android:src="@drawable/logoinverse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.054" />
 
-    <ImageView
-        android:id="@+id/tradeal_name"
-        android:layout_width="148dp"
-        android:layout_height="158dp"
-        android:src="@drawable/tradeal_name"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toEndOf="@+id/logoinverse"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splash" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
