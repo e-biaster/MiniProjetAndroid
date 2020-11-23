@@ -11,4 +11,6 @@
     <color name="purple">#ba53de</color>
     <color name="pink">#f469a9</color>
     <color name="blue">#88bef5</color>
+    <color name="lightmain">#EDE5FB</color>
+    <color name="lightsub">#CBF5E9</color>
 </resources>
