@@ -8,6 +8,7 @@
 
     <ImageView
         android:id="@+id/appsplash"
+        android:elevation="2dp"
         android:layout_width="wrap_content"
         android:layout_height="900dp"
         android:scaleType="centerCrop"
@@ -25,6 +26,7 @@
         android:layout_width="173dp"
         android:layout_height="126dp"
         android:src="@drawable/tradeal_name"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
@@ -38,6 +40,7 @@
         android:layout_height="125dp"
         android:layout_marginStart="56dp"
         android:src="@drawable/logoinverse"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,6 +50,7 @@
         android:id="@+id/lottie"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
+        android:elevation="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -55,6 +59,15 @@
         app:layout_constraintVertical_bias="1.0"
         app:lottie_autoPlay="true"
         app:lottie_rawRes="@raw/splash" />
+
+    <com.cuberto.liquid_swipe.LiquidPager
+        android:id="@+id/appboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
