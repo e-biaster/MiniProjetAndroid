@@ -44,7 +44,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.054" />
+        app:layout_constraintVertical_bias="0.054"/>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
@@ -58,16 +58,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/splash" />
+        app:lottie_rawRes="@raw/splash"/>
 
     <com.cuberto.liquid_swipe.LiquidPager
-        android:id="@+id/appboard"
+        android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
