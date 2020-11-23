@@ -35,7 +35,6 @@ public class SplashActivity extends AppCompatActivity {
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
 
-
         appsplash.animate().translationY(-3000).setDuration(1000).setStartDelay(4000);
         applogo.animate().translationY(2000).setDuration(1000).setStartDelay(4000);
         appname.animate().translationY(2000).setDuration(1000).setStartDelay(4000);
@@ -66,7 +65,7 @@ public class SplashActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 0;
+            return NUM_PAGES;
         }
     }
 }
