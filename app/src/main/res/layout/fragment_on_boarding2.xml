@@ -7,19 +7,19 @@
     android:background="@color/lightmain">
 
     <ImageView
-        android:id="@+id/board1"
-        android:layout_width="390dp"
-        android:layout_height="811dp"
-        android:src="@drawable/board2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/board2"
+        android:layout_width="545dp"
+        android:layout_height="491dp"
+        android:src="@drawable/board2small"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.813" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/skipbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -32,54 +32,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView2"
         android:layout_width="270dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="692dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/gentleman_heavy"
-        android:text="Start Trading!"
+        android:text="Stop buying"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="237dp"
-        android:layout_height="37dp"
+        android:layout_width="270dp"
+        android:layout_height="38dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="732dp"
+        android:layout_marginBottom="56dp"
         android:fontFamily="@font/gentleman_heavy"
-        android:text="Stop Buying"
+        android:text="Start trading!"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/board2"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="660dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/calibri_regular"
         android:text="Follow the best economical way."
         android:textColor="@color/black"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="50dp"
         android:layout_height="10dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="28dp"
         android:src="@drawable/tab2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.947" />
-
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
