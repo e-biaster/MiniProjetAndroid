@@ -8,6 +8,8 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
@@ -20,6 +22,8 @@ public class SplashActivity extends AppCompatActivity {
     private static final int NUM_PAGES=3;
     private ViewPager viewPager;
     private ScreenSlidePagerAdapter pagerAdapter;
+
+    Animation anim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,9 @@ public class SplashActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.pager);
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
+
+        anim = AnimationUtils.loadAnimation(this, R.anim.o_b_anim);
+        viewPager.startAnimation(anim);
 
         appsplash.animate().translationY(-3000).setDuration(1000).setStartDelay(4000);
         applogo.animate().translationY(2000).setDuration(1000).setStartDelay(4000);
