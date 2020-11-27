@@ -11,7 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class OnBoardingFragment3 extends Fragment {
+
+    FloatingActionButton fab;
 
     @Nullable
     @Override
@@ -25,6 +29,16 @@ public class OnBoardingFragment3 extends Fragment {
                 startActivity(i);
             }
         });
+
+        fab = root.findViewById(R.id.fab_skip);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
         return root;
     }
 }

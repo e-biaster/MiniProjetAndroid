@@ -13,4 +13,6 @@
     <color name="blue">#88bef5</color>
     <color name="lightmain">#EDE5FB</color>
     <color name="lightsub">#CBF5E9</color>
+    <color name="colorhint">#DCDCDC</color>
+    <color name="gray">#ACB0B8</color>
 </resources>

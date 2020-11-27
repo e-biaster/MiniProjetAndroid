@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "597199472471",
+    "firebase_url": "https://tradeal-fb8b7.firebaseio.com",
+    "project_id": "tradeal-fb8b7",
+    "storage_bucket": "tradeal-fb8b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597199472471:android:6f0404486c4a9e51ba2012",
+        "android_client_info": {
+          "package_name": "com.esprit.miniproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597199472471-agablco4dfdlb4b4l6v7ueb8br98d3ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSVqgJbThsiV41MBamtlWBLcr0O8UsPQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597199472471-agablco4dfdlb4b4l6v7ueb8br98d3ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MiniProject</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="mobile_phone">Mobile Phone</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="skip">Skip</string>
 </resources>

@@ -5,9 +5,18 @@
       <w>applogo</w>
       <w>appname</w>
       <w>appsplash</w>
+      <w>btnlogin</w>
+      <w>btnsign</w>
+      <w>colorhint</w>
+      <w>edittext</w>
+      <w>forgetpass</w>
+      <w>lightmain</w>
       <w>lightpurp</w>
+      <w>lightsub</w>
       <w>logoinverse</w>
       <w>onboarding</w>
+      <w>passx</w>
+      <w>signup</w>
       <w>skipbtn</w>
       <w>tradeal</w>
     </words>
