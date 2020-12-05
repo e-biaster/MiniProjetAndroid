@@ -1,38 +1,40 @@
 package com.esprit.miniproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    ImageView backBtn;
+public class WelcomeActivity extends AppCompatActivity {
+
+    Button loginbtn;
     TextView registertxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_welcome);
 
-        backBtn = findViewById(R.id.back);
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        loginbtn = findViewById(R.id.loginbtn);
+        loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-            }
-        });
-
-        registertxt = findViewById(R.id.register);
-        registertxt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this, SignupActivity.class);
+                Intent i = new Intent(WelcomeActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
+
+        registertxt = findViewById(R.id.textView6);
+        registertxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(WelcomeActivity.this, SignupActivity.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

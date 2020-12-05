@@ -8,14 +8,22 @@
       <w>btnlogin</w>
       <w>btnsign</w>
       <w>colorhint</w>
+      <w>darkgray</w>
       <w>edittext</w>
       <w>forgetpass</w>
+      <w>lightgray</w>
       <w>lightmain</w>
       <w>lightpurp</w>
       <w>lightsub</w>
+      <w>loginbtn</w>
+      <w>logintxt</w>
       <w>logoinverse</w>
       <w>onboarding</w>
       <w>passx</w>
+      <w>probold</w>
+      <w>prolight</w>
+      <w>proregular</w>
+      <w>registertxt</w>
       <w>signup</w>
       <w>skipbtn</w>
       <w>tradeal</w>
