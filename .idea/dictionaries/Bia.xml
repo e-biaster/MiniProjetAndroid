@@ -18,6 +18,7 @@
       <w>loginbtn</w>
       <w>logintxt</w>
       <w>logoinverse</w>
+      <w>miniproject</w>
       <w>onboarding</w>
       <w>passx</w>
       <w>probold</w>
@@ -26,6 +27,7 @@
       <w>registertxt</w>
       <w>signup</w>
       <w>skipbtn</w>
+      <w>sqlite</w>
       <w>tradeal</w>
     </words>
   </dictionary>

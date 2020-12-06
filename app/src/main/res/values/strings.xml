@@ -20,4 +20,5 @@
     <string name="hello_there">Hello there!</string>
     <string name="join_us">Join Us!</string>
     <string name="loginbtn">Login</string>
+    <string name="logout">Logout</string>
 </resources>

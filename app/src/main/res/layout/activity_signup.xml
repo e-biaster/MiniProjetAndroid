@@ -78,30 +78,12 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
 
-
-    <EditText
-        android:id="@+id/c_password"
-        android:layout_width="310dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="252dp"
-        android:background="@drawable/input_field"
-        android:ems="10"
-        android:hint="@string/confirm"
-        android:inputType="textPassword"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
-        android:id="@+id/btnsign"
+        android:id="@+id/btnSign"
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button"
         android:fontFamily="@font/probold"
@@ -112,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/c_password" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
         android:id="@+id/membership"
