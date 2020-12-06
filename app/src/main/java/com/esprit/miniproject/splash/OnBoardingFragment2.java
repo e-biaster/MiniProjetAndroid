@@ -1,4 +1,4 @@
-package com.esprit.miniproject;
+package com.esprit.miniproject.splash;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,12 +11,15 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class OnBoardingFragment1 extends Fragment {
+import com.esprit.miniproject.R;
+import com.esprit.miniproject.WelcomeActivity;
+
+public class OnBoardingFragment2 extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_on_boarding1, container, false);
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.fragment_on_boarding2, container, false);
         TextView skipbtn = (TextView) root.findViewById(R.id.skipbtn);
         skipbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,3 +31,4 @@ public class OnBoardingFragment1 extends Fragment {
         return root;
     }
 }
+

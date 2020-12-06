@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
 
         session = new SessionManager(getApplicationContext());
         if(session.isLoggedIn()){
-            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
             startActivity(i);
             finish();
         }
@@ -107,10 +107,10 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
-                    
+
                     if (!error) {
                         session.setLogin(true);
-                        Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
                         startActivity(i);
                         finish();
 

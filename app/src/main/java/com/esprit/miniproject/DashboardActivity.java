@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.esprit.miniproject.session.SQLiteHandler;
 import com.esprit.miniproject.session.SessionManager;
 
-public class MainActivity extends Activity {
+public class DashboardActivity extends Activity {
 
     private SQLiteHandler db;
     private SessionManager session;
@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard);
 
         TextView txtName = (TextView) findViewById(R.id.name);
         TextView txtEmail = (TextView) findViewById(R.id.email);
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
     private void logoutUser() {
         session.setLogin(false);
         db.deleteUsers();
-        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+        Intent i = new Intent(DashboardActivity.this, LoginActivity.class);
         startActivity(i);
         finish();
     }

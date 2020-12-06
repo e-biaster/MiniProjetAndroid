@@ -21,4 +21,9 @@
     <string name="join_us">Join Us!</string>
     <string name="loginbtn">Login</string>
     <string name="logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="wallet">Wallet</string>
+    <string name="messages">Messages</string>
+    <string name="groups">Groups</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.esprit.miniproject;
+package com.esprit.miniproject.splash;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,17 +7,22 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.esprit.miniproject.DashboardActivity;
+import com.esprit.miniproject.R;
+import com.esprit.miniproject.session.SessionManager;
 
 public class SplashActivity extends AppCompatActivity {
 
     ImageView applogo, appname, appsplash;
     LottieAnimationView lottieAnimationView;
+    SessionManager session;
 
     private static final int NUM_PAGES=3;
     private ViewPager viewPager;
@@ -29,6 +34,13 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        session = new SessionManager(getApplicationContext());
+        if(session.isLoggedIn()){
+            Intent i = new Intent(SplashActivity.this, DashboardActivity.class);
+            startActivity(i);
+            finish();
+        }
 
         applogo = findViewById(R.id.applogo);
         appname = findViewById(R.id.appname);

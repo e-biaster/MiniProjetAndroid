@@ -13,12 +13,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.esprit.miniproject.app.AppConfig;
 import com.esprit.miniproject.app.AppController;
 import com.esprit.miniproject.session.SQLiteHandler;
 import com.esprit.miniproject.session.SessionManager;
@@ -74,7 +72,7 @@ public class SignupActivity extends AppCompatActivity {
         db = new SQLiteHandler(getApplicationContext());
 
         if (session.isLoggedIn()) {
-            Intent i = new Intent(SignupActivity.this, MainActivity.class);
+            Intent i = new Intent(SignupActivity.this, DashboardActivity.class);
             startActivity(i);
             finish();
         }

@@ -1,4 +1,4 @@
-package com.esprit.miniproject;
+package com.esprit.miniproject.splash;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.esprit.miniproject.R;
+import com.esprit.miniproject.WelcomeActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class OnBoardingFragment3 extends Fragment {
